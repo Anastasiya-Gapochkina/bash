@@ -1,9 +1,6 @@
 #!/bin/bash
-IPTABLES="/sbin/iptables"
-# интерфейс, смотрящий в локальную сеть
-LAN=enp0s8
-# интерфейс, смотрящий "наружу"
-WAN=enp0s3
+
+source ./var.conf
 
 # очищаем правила
 ${IPTABLES} -F
